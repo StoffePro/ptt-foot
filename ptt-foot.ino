@@ -68,22 +68,22 @@ void loop() {
   // falling = high (not pressed - voltage from pullup resistor)
   //           to low (pressed - button connects pin to ground)
   if (button0.fallingEdge()) {
-    Keyboard.press(KEY_F13);
+    Keyboard.press(KEYPAD_SLASH);
   }
   if (button1.fallingEdge()) {
-    Keyboard.press(KEY_F14);
+    Keyboard.press(KEYPAD_ASTERIX);
   }
   if (button2.fallingEdge()) {
-    Keyboard.press(KEY_F15);
+    Keyboard.press(KEYPAD_MINUS);
   }
   if (button3.fallingEdge()) {
-    Keyboard.press(KEY_F16);
+    Keyboard.press(KEYPAD_PLUS);
   }
   if (button4.fallingEdge()) {
-    Keyboard.press(KEY_F17);
+    Keyboard.press(KEYPAD_ENTER);
   }
   if (button5.fallingEdge()) {
-    Keyboard.press(KEY_F18);
+    Keyboard.press(KEYPAD_PERIOD);
   }
 
   // Check each button for "rising" edge
@@ -93,22 +93,22 @@ void loop() {
   // rising = low (pressed - button connects pin to ground)
   //          to high (not pressed - voltage from pullup resistor)
   if (button0.risingEdge()) {
-    Keyboard.release(KEY_F13);
+    Keyboard.release(KEYPAD_SLASH);
   }
   if (button1.risingEdge()) {
-    Keyboard.release(KEY_F14);
+    Keyboard.release(KEYPAD_ASTERIX);
   }
   if (button2.risingEdge()) {
-    Keyboard.release(KEY_F15);
+    Keyboard.release(KEYPAD_MINUS);
   }
   if (button3.risingEdge()) {
-    Keyboard.release(KEY_F16);
+    Keyboard.release(KEYPAD_PLUS);
   }
   if (button4.risingEdge()) {
-    Keyboard.release(KEY_F17);
+    Keyboard.release(KEYPAD_ENTER);
   }
   if (button5.risingEdge()) {
-    Keyboard.release(KEY_F18);
+    Keyboard.release(KEYPAD_PERIOD);
   }
 }
 
